@@ -4,6 +4,7 @@
 #include "util.h"
 
 int main(){
-  char *str = getStdIn();
-  write(1, str, sizeof(str));
+    char *str = getStdIn();
+    char **tokens = mytoc(str, ' ');
+    write(1, str, strlen(str));
 }
