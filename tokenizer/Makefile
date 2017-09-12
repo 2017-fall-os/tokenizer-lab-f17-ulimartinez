@@ -11,3 +11,4 @@ test: $(OBJECTS)
 clean:
 	rm -f $(OBJECTS)
 	rm -f test
+.PHONEY: all clean

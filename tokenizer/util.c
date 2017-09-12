@@ -1,8 +1,12 @@
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include "util.h"
-#define MAX_CHARS 1000
+#define MAX_CHARS 1000//maximum number of characters that can be inputed
+
+//helper functions
+/*
+ * gets the input string from standard input
+ */
 char* getStdIn(){
     char buf[MAX_CHARS];
     char *str;
@@ -23,6 +27,9 @@ char* getStdIn(){
     *pstr = 0;
     return str;
 }
+/*
+ * gets the length of a null terminated string
+ */
 int strlen(char *str){
     int i = 0;
     for(char *pstr = str; *pstr; pstr++)
