@@ -6,6 +6,7 @@ This program prompts the user for an input string and it separates it into token
 Running
 ----------------
 build the project using: make
+
 run by running "test"
 
 Delimiter
@@ -17,3 +18,9 @@ provide flag -d followed by the delimiter
 example
 
 ./test -d ":"
+
+uses : as a delimiter
+
+Exiting
+--------------
+type "exit" at the prompt to exit
